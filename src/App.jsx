@@ -1,6 +1,7 @@
 import ItemListComponents from './components/ItemListComponents'
 import './App.css'
 import NavBar from './components/NavBar'
+import './main.jsx'
 
 function App() {
   
