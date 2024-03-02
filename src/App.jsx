@@ -1,12 +1,14 @@
 import ItemListComponents from './components/ItemListComponents'
 import './App.css'
+import NavBar from './components/NavBar'
 
 function App() {
   
 
   return (
     <>
-      <ItemListComponents/>
+      <ItemListComponents saludo="Bienvenidos a Oli's house"/>
+      <NavBar/>
     </>
   )
 }
