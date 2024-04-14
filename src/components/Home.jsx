@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+/*import { NavLink } from "react-router-dom";
 
 const Home = () => {
     return(
@@ -8,4 +8,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default Home;*/

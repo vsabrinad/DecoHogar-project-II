@@ -1,5 +1,5 @@
-import React from "react";
-import Item from "../Item/Item"; 
+//import React from "react";
+/*import Item from "../Item/Item"; 
 
 const ItemList = ({products}) => {
     return (
@@ -15,4 +15,4 @@ const ItemList = ({products}) => {
     )
 
 }
-export default ItemList;
+export default ItemList;*/

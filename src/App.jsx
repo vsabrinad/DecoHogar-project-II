@@ -1,18 +1,18 @@
-import ItemListContainer from './components/ItemListContainer';
-import Item from './components/Item/Item.jsx';
+import ItemListContainer from './components/ItemListContainer.jsx';
 import './App.css';
 import NavBar from './components/NavBar/NavBar.jsx';
 import './main.jsx';
-import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom'
+//import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom'
+//import Item from './components/Item/Item.jsx';
 
 function App() {
   
 
   return (
-    <>
+    <div>
       <ItemListComponents saludo="Bienvenidos a Oli's house"/>
       <BrowserRouter>
-      <NavBar/>
+      <NavBar className="bg-beige-700"/>
       <Router>
         <Routes>
           <Route path='/' element={<ItemListContainer/>}></Route>
@@ -21,7 +21,7 @@ function App() {
         </Routes>
       </Router>
       </BrowserRouter>
-    </>
+    </div>
   )
 }
 
