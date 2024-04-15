@@ -1,7 +1,4 @@
 import React from 'react';
-import './style.css';
-import CartWidget from '../CartWidget';
-
 const NavBar = () => {
     return (  <> 
     <div>
@@ -31,7 +28,8 @@ const NavBar = () => {
                                     <li><a class="dropdown-item" href="#">Kit de Baño</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item"><CartWidget/>
+                            <li class="nav-item">
+                            <i src="https://www.flaticon.es/icono-gratis/anadir-al-carrito_2438133">1</i>
                             </li>
                         </ul>
                     </div> 

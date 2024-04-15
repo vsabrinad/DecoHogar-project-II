@@ -1,5 +1,4 @@
 //import { useState } from 'react';
-import '../style.css';
 //import ItemList from '../ItemList/ItemList';
 //import {getProducts, getProductsByCategory} from '../'
 //import { useParams } from 'react-router-dom'

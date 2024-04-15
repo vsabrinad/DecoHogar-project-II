@@ -1,6 +1,7 @@
 import ItemListContainer from './components/ItemListContainer.jsx';
 import './App.css';
 import NavBar from './components/NavBar/NavBar.jsx';
+import Counter from './components/Counter.jsx';
 import './main.jsx';
 //import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom'
 //import Item from './components/Item/Item.jsx';
@@ -9,8 +10,9 @@ function App() {
   
 
   return (
-    <div>
-      <ItemListComponents saludo="Bienvenidos a Oli's house"/>
+    <div className='bg-beige-500'>
+      <ItemListContainer saludo="Bienvenidos a Oli's house"/>
+      <Counter/>
       <BrowserRouter>
       <NavBar className="bg-beige-700"/>
       <Router>
