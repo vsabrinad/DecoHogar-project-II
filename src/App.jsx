@@ -3,11 +3,13 @@ import './App.css';
 import NavBar from './components/NavBar.jsx';
 import Counter from './components/Counter.jsx';
 import './main.jsx';
-//import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
 import Item from './components/Item.jsx';
 import ItemList from './components/ItemList.jsx';
 import ItemDetailContainer from './components/ItemDetailContainer.jsx';
 import ItemDetail from './components/ItemDetail.jsx';
+import Home from './components/Home.jsx';
+
 
 function App() {
   
@@ -24,9 +26,11 @@ function App() {
       <BrowserRouter>
       <Router>
         <Routes>
+          <Route path='/' element={<Home/>}></Route>
           <Route path='/' element={<ItemListContainer/>}></Route>
-          <Route path='/category/:category' element={<ItemListContainer/>}></Route>
-          <Route path='/producto/:id' element={<ItemDetailContainer/>}></Route>
+          <Route path='/category/:id' element={<ItemListContainer/>}></Route>
+          <Route path='/producto/:id' element={<ItemListContainer/>}></Route>
+          <Route></Route>
         </Routes>
       </Router>
       </BrowserRouter>

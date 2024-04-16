@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import products from '../utils/AsynMock';
+import ItemDetail from "./ItemDetail";
 
 const ItemList = () =>  {
     const [productsCharged, setProductsCharged] = useState([])
@@ -25,7 +26,7 @@ const ItemList = () =>  {
     <div>
         {
         productsCharged.products.length > 0 && productsCharged.products.map((item, index) => {
-            return <Item key={index} ietm={item}/>
+            return <ItemDetail key={index} ietm={item}/>
         }
         )
         }

@@ -1,4 +1,6 @@
 import React from 'react';
+import CartWidget from './CartWidget';
+
 const NavBar = () => {
     return (  <> 
     <div>
@@ -29,7 +31,7 @@ const NavBar = () => {
                                 </ul>
                             </li>
                             <li class="nav-item">
-                            <i src="https://www.flaticon.es/icono-gratis/anadir-al-carrito_2438133">1</i>
+                            <CartWidget/>
                             </li>
                         </ul>
                     </div> 

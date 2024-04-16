@@ -1,11 +1,11 @@
-/*import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
     return(
         <>
-        <NavLink to='/Home'>Inicio.ejemplo</NavLink>
+        <NavLink to='/Home'>Inicio</NavLink>
         </>
     )
 }
 
-export default Home;*/
+export default Home;

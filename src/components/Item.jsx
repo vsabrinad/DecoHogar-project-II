@@ -1,4 +1,4 @@
-const Item = ({item}) => {
+/*const Item = ({item}) => {
     return(<>
     <div>
         {item. category}
@@ -8,7 +8,7 @@ const Item = ({item}) => {
         {item. description}
     </div>
     </>)
-}
+}*/
 
 
 

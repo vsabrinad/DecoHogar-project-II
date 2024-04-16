@@ -1,4 +1,13 @@
-const products= [{
+const category = [
+    {
+        id: 1, category: "Deco",
+        id: 2, category: "Espejos",
+        id: 3, category: "Kit de baño"
+
+    }
+]
+const products= [
+    {
         id: 1,
         name: "Reloj Olivia",
         price: 7000,
