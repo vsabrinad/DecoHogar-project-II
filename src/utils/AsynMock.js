@@ -1,3 +1,4 @@
+const mockProducts= () => {
 const category = [
     {
         id: 1, category: "Deco",
@@ -55,11 +56,15 @@ const products= [
         description: "Ver descripcion"
     }
 ]
-export const getProducts = () => {
+/*const getProducts = () => {
     return new Promise((resolve, reject) => {
         setTimeout ( () => {
             resolve(products)}
             , 2000
         )
     })
+}*/
 }
+
+
+export default mockProducts;

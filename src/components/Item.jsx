@@ -1,14 +1,14 @@
-/*const Item = ({item}) => {
+const Item = ({item}) => {
     return(<>
     <div>
-        {item. category}
         {item. img}
         {item. nombre}
         {item. precio}
         {item. description}
     </div>
     </>)
-}*/
+}
+export default Item;
 
 
 
