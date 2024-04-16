@@ -1,7 +1,41 @@
-//import React from "react";
-/*import Item from "../Item/Item"; 
+import { useEffect, useState } from "react";
+import products from '../utils/AsynMock';
 
-const ItemList = ({products}) => {
+const ItemList = () =>  {
+    const [productsCharged, setProductsCharged] = useState([])
+    const fakeApiCall = (products) => {
+        return new Promise((resolve, reject) => {
+            setTimeout ( () => {
+                resolve(products)}
+                , 2000
+            )
+        })
+            
+    }
+
+    useEffect(() => {
+        //const respProducts = fakeApiCall(products).then(resp => setProductsCharged(resp))
+        //console.log(respProducts)
+        fakeApiCall(products).then(resp => setProductsCharged(resp))
+        
+
+    },[])
+    //console.log(setProductsCharged)
+    return (<>
+    <div>
+        {
+        productsCharged.products.length > 0 && productsCharged.products.map((item, index) => {
+            return <Item key={index} ietm={item}/>
+        }
+        )
+        }
+    </div>
+    </>);
+
+}
+export default ItemList;
+
+/*const ItemList = ({products}) => {
     return (
         <div className="flex">
             {

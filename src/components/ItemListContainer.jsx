@@ -1,16 +1,4 @@
-//import { useState } from 'react';
-//import ItemList from '../ItemList/ItemList';
-//import {getProducts, getProductsByCategory} from '../'
-//import { useParams } from 'react-router-dom'
-
 const ItemListContainer = ({saludo}) => {
-
-    //const [loading, setLoading] = useState(true)
-
-    //const [products, setProducts] = useState([])
-
-    //const {category} = useParams()
-
     const clickbutton = () => {
         console.log('click')
     } 

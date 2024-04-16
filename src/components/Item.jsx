@@ -1,7 +1,18 @@
-/*import React from "react";
-//import { link } from 'react-router-dom';
+const Item = ({item}) => {
+    return(<>
+    <div>
+        {item. category}
+        {item. img}
+        {item. nombre}
+        {item. precio}
+        {item. description}
+    </div>
+    </>)
+}
 
-const Item = ({product}) => {
+
+
+/*const Item = ({products}) => {
     return(
         <div className="w-40 bg-white">
             <h2>{product.name}</h2>
@@ -11,4 +22,5 @@ const Item = ({product}) => {
         </div>
     )
 }
-export default Item;*/
+export default Item;
+*/

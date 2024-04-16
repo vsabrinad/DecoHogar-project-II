@@ -1,5 +1,4 @@
-export const products= [
-    {
+const products= [{
         id: 1,
         name: "Reloj Olivia",
         price: 7000,
@@ -47,3 +46,11 @@ export const products= [
         description: "Ver descripcion"
     }
 ]
+export const getProducts = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout ( () => {
+            resolve(products)}
+            , 2000
+        )
+    })
+}
