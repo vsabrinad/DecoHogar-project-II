@@ -1,43 +1,48 @@
 import React from 'react';
 import CartWidget from './CartWidget';
+import { Link, NavLink } from "react-router-dom";
+
 
 const NavBar = () => {
-    return (  <> 
+    return (  
     <div>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <img src='https://www.bing.com/images/search?view=detailV2&ccid=AUgoxcR9&id=8472A00DE1B25BA53270A6AC3A2B0AA4EDFD0257&thid=OIP.AUgoxcR9FqWHMZ5fCmiHYAHaHa&mediaurl=https%3a%2f%2fi.pinimg.com%2f736x%2f48%2f73%2f51%2f487351147e6622c1384ef8e71229d7b2.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.014828c5c47d16a587319e5f0a688760%3frik%3dVwL97aQKKzqspg%26pid%3dImgRaw%26r%3d0&exph=736&expw=736&q=Logotipos+Con+Corazon+Y+Casa&simid=608002159615420124&FORM=IRPRST&ck=E2EB48D0C316B85260534712F7BA5F97&selectedIndex=9&itb=0'></img>
-                <a class="navbar-brand" href="#">Oli's house-DecoHogar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">¿Quienes somos?</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contacto</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Deco</a></li>
-                                    <li><a class="dropdown-item" href="#">Espejos</a></li>
-                                    <li><a class="dropdown-item" href="#">Kit de Baño</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                            <CartWidget/>
-                            </li>
-                        </ul>
-                    </div> 
-                </div>
-            </nav>
-        </div>
-    </>);
+        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+            <div className="container-fluid">
+                <li><link to ="/">
+                <img src="https://www.flaticon.com/edge/redirect?url=aHR0cHM6Ly9hZG9iZS5wcmYuaG4vY2xpY2svY2FtcmVmOjEwMTFscmNLSy9jcmVhdGl2ZXJlZjoxMTAxbDkwMTc2L3B1YnJlZjpHQTEuMi45MTkzNjIwMjQuMTY5Njk1OTI0Ni9kZXN0aW5hdGlvbjpodHRwcyUzQSUyRiUyRnN0b2NrLmFkb2JlLmNvbSUyRmVzJTJGaW1hZ2VzJTJGaWQlMkY2ODIxNDk2MjQlM0ZrJTNEY2FzYSUyNTIwY29uJTI1MjBjb3Jhem9uJTI1MjBsb2dvJTI1MjBpY29ubw==&_ga=2.63010159.1559663866.1715020386-919362024.1696959246&_gl=1*svr4m7*test_ga*OTE5MzYyMDI0LjE2OTY5NTkyNDY.*test_ga_523JXC6VL7*MTcxNTAyMzI0MS41LjEuMTcxNTAyMzI0MS42MC4wLjA.*fp_ga*OTE5MzYyMDI0LjE2OTY5NTkyNDY.*fp_ga_1ZY8468CQB*MTcxNTAyMzI0MS41LjEuMTcxNTAyMzI0MS42MC4wLjA."></img>
+                <a className="navbar-brand" href="#">Oli DecoHogar</a>
+                </link></li>
+                <ul className="navbar-nav">
+
+                    <li className="nav-item">
+                        <link to ="/" className="nav-link active" aria-current="page" href="#">Inicio</link></li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#">¿Quienes somos?</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#">Contacto</a>
+                    </li>
+                    <li className="nav-item dropdown">
+                        <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
+                <ul className="dropdown-menu">
+                    <li><link to= "/categoriy/1" className="dropdown-item" href="#">Deco</link></li>
+                    <li><link to="/category/2" className="dropdown-item" href="#">Espejos</link></li>
+                    <li><link to="/category/3" className="dropdown-item" href="#">Kit de Baño</link></li>
+                </ul>
+                <li><link to={'/items'} className="text-white text-xl">Productos</link></li>
+          <li><link className="text-white text-xl">Contacto</link></li>
+          <li>
+            <link to='/cart'><CartWidget /></link>
+          </li>
+                    </li>
+                    <li className="nav-item">
+                    <CartWidget/>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    );
 }
 export default NavBar;
+

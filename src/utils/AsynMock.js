@@ -1,13 +1,13 @@
-const mockProducts= () => {
-const category = [
+const mockProducts= {
+category : [
     {
         id: 1, category: "Deco",
         id: 2, category: "Espejos",
         id: 3, category: "Kit de baño"
 
     }
-]
-const products= [
+],
+products : [
     {
         id: 1,
         name: "Reloj Olivia",
@@ -56,15 +56,6 @@ const products= [
         description: "Ver descripcion"
     }
 ]
-/*const getProducts = () => {
-    return new Promise((resolve, reject) => {
-        setTimeout ( () => {
-            resolve(products)}
-            , 2000
-        )
-    })
-}*/
 }
-
-
 export default mockProducts;
+

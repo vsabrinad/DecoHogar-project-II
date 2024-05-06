@@ -1,14 +1,12 @@
 import ItemListContainer from './components/ItemListContainer.jsx';
-import './App.css';
-import NavBar from './components/NavBar.jsx';
-import Counter from './components/Counter.jsx';
+import './App.css'; 
+import NavBar from './components/NavBar.jsx'; 
 import './main.jsx';
-import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
-import Item from './components/Item.jsx';
-import ItemList from './components/ItemList.jsx';
+import { BrowserRouter as Routes, Route, BrowserRouter } from 'react-router-dom';
 import ItemDetailContainer from './components/ItemDetailContainer.jsx';
-import ItemDetail from './components/ItemDetail.jsx';
-import Home from './components/Home.jsx';
+import { CartContext, CartProvider } from './context/CartContext';
+import CartPage from './components/CartPage';
+
 
 
 function App() {
@@ -16,24 +14,18 @@ function App() {
 
   return (
     <div className='bg-beige-500'>
+    <CartProvider>
       <NavBar className="bg-beige-700"/>
-      <ItemListContainer saludo="Bienvenidos a Oli's house"/>
-      <ItemList/>
-      <Item/>
-      <ItemDetailContainer/>
-      <ItemDetail/>
-      <Counter/>
       <BrowserRouter>
-      <Router>
         <Routes>
-          <Route path='/' element={<Home/>}></Route>
           <Route path='/' element={<ItemListContainer/>}></Route>
+          <Route path="/cart" element={<CartPage />}/>
+          <Route path='/items' element={<ItemDetailContainer />}/>
           <Route path='/category/:id' element={<ItemListContainer/>}></Route>
-          <Route path='/producto/:id' element={<ItemListContainer/>}></Route>
-          <Route></Route>
+          <Route path='/producto/:id' element={<ItemDetailContainer/>}></Route>
         </Routes>
-      </Router>
       </BrowserRouter>
+      </CartProvider>
     </div>
   )
 }

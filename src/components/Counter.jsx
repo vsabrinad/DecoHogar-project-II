@@ -1,4 +1,6 @@
-const Counter = () => {
+import React, {useState} from 'react';
+
+const counter = () => {
     const [value, setValue] = useState(0)
     const stock = 5
     const onAdd = (expresion) => {
@@ -23,4 +25,5 @@ const Counter = () => {
         </div>
     </>)
 }
-export default Counter;
+export default counter;
+
