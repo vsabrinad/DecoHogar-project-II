@@ -1,0 +1,7 @@
+{
+    "category" : [
+        {"id": 1, "nombre": "Deco"},
+        {"id": 2, "nombre": "Espejos"},
+        {"id": 3, "nombre": "Kit de baño"}
+    ]
+}

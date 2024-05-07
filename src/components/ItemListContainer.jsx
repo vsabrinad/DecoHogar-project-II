@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { fakeApiCall } from "../utils/fakeApiCall";
 import productos from "../utils/AsynMock";
 import { Link, useParams } from "react-router-dom";
-
+//import { collection, getDocs, getFirestore} from "firestore/firebase"
 
 
 
@@ -16,6 +16,14 @@ const ItemListContainer = () => {
       fakeApiCall(productos).then(res => { setResponse(res); setLoading(false); });
     }, []);
   
+    /*useEffect(()=> {
+      const db = getFirestore();
+      const collection = collection (db, 'productos', 'VvfKpfnmRc57xtAqNE6e')
+      getDocs(collection).then((snapshot)=>{
+        setProducts(snapshot.docs.map(doc) =>
+          ({id: doc.id, ...doc.data ()})));
+    })
+  },[]);*/
   
     const getProductosByCategoria = (categoriaId) => {
       if (categoriaId) {
